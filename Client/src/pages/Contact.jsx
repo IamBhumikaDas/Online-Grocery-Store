@@ -1,10 +1,16 @@
 import React from 'react'
 import toast from 'react-hot-toast'
 import { motion } from "framer-motion";
+import {  useAppContext } from '../context/AppContext';
 
 const Contact = () => {
+
+    const {navigate} =useAppContext()
+
  const submit=()=>{
     toast.success("Form Submitted")
+    navigate('/contact');
+    
  }
 
   return (
