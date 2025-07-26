@@ -19,10 +19,10 @@ if(searchQuery.length > 0 ){
     },[searchQuery])
 
        return (
-        <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-1 border-b border-gray-300 bg-white relative transition-all">
+        <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-0 border-b border-gray-300 bg-white relative transition-all">
 
             <NavLink onClick={()=> setOpen(false)} to='/'>
-              <img  className=" h-14 md:h-20"src={assets.logo} alt="logo" />
+              <img  className=" h-20 md:h-25"src={assets.logo} alt="logo" />
             </NavLink>
 
             {/* Desktop Menu */}
